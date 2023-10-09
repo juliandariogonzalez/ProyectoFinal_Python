@@ -38,9 +38,9 @@
                   <p class="card-text">Excelente estado! Cuenta con {{ alquiler.ambientes }} ambientes. </p>
                   <p class="card-text">$ {{ alquiler.precio }}</p> 
                   {% if user.is_authenticated %} 
-                  <a class="btn btn-primary btn-dark" href="{% url 'update_alquiler' alquiler.id %}">Editar→</a>
+                  <a class="btn btn-primary btn-dark" href="{% url 'update_alquiler' alquiler.id %}">Editar</a>
                   <i class="fa fa-edit fa-sm" title="Edit Record"></i>
-                  <a class="btn btn-danger"  href="{% url 'delete_alquiler' alquiler.id %}">Eliminar X </a>
+                  <a class="btn btn-danger"  href="{% url 'delete_alquiler' alquiler.id %}">Eliminar  </a>
                   <i class="fa fa-trash fa-sm" title="Edit Record"></i>
                   {% endif %} 
                  </a>
